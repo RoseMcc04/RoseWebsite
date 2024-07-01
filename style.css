@@ -43,22 +43,10 @@ h2
     font-family: sans-serif;
     font-size: 150;
     font-weight: 100;
-<<<<<<< HEAD
-    background-color: darkorchid;
-=======
->>>>>>> css
 }
 
 p 
 {
-<<<<<<< HEAD
-    color: cyan;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 100;
-    background-color: black;
-}
-=======
     color: magenta;
     text-align: center;
     font-family: sans-serif;
@@ -72,4 +60,3 @@ footer
     font-family: sans-serif;
     font-size: 100;
 }
->>>>>>> css
