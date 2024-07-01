@@ -8,6 +8,11 @@
     background-color: indigo;
 }
 
+.intro 
+{
+    text-align: center;
+}
+
 h1 
 {
     color: magenta;
@@ -26,4 +31,13 @@ h2
     font-size: 150;
     font-weight: 100;
     background-color: darkorchid;
+}
+
+p 
+{
+    color: cyan;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100;
+    background-color: black;
 }
