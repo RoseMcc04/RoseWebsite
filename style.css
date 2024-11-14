@@ -1,85 +1,138 @@
-.header
-{
-    color: magenta;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  #header {
+    background-color: #3b3b98;
+    color: #fff;
+    padding: 2rem;
     text-align: center;
-    font-family: sans-serif;
-    font-size: 400;
-    font-weight: 200;
-}
-
-.intro 
-{
-    text-align: center;
-}
-
-.interests 
-{
-    text-align: center;
-}
-
-.transAndAutism 
-{
-    text-align: center;
-}
-
-.intro 
-{
-    text-align: center;
-}
-
-h1 
-{
-    color: magenta;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 200;
-    font-weight: 150;
-}
-
-h2 
-{
-    color: magenta;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 150;
-    font-weight: 100;
-}
-
-p 
-{
-    color: magenta;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 100;
-    background-color: aqua;
-}
-
-body 
-{
-    background-color: aqua;
-}
-
-footer 
-{
-    color: magenta;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 100;
-}
-
-table 
-{
-    border-collapse: collapse;
+    border-radius: 8px;
+  }
+  
+  #header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    color: #3b3b98;
+  }
+  
+  section p {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Text Sizes */
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+  
+  p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  }
+  
+  /* Table Styling */
+  #resources {
+    margin-top: 20px;
+  }
+  
+  #lgbtResources {
     width: 100%;
-}
-
-table, th, td 
-{
-    border: 1px solid black;
-}
-
-th, td 
-{
-    padding: 8px;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  #lgbtResources thead {
+    background-color: #3b3b98;
+    color: #fff;
+  }
+  
+  #lgbtResources th, #lgbtResources td {
+    padding: 10px;
     text-align: left;
-}
+    border: 1px solid #ddd;
+  }
+  
+  #lgbtResources tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  #lgbtResources a {
+    color: #3b3b98;
+    text-decoration: none;
+  }
+  
+  #lgbtResources a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #333;
+    padding: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout and Responsive Design */
+  body, section {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    section {
+      padding: 2rem 4rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      padding: 20px 40px;
+    }
+  }
+  
