@@ -1,80 +1,157 @@
-/* Reset some basic styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Basic Styling */
 body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Color Variables */
+:root {
+  --neonpink: #FF1493; /* Neon Pink */
+  --brightblue: #00BFFF; /* Bright Blue */
+  --sharpgreen: #00FF00;
+  --darkblack: #1a1a1a;
+  --white: #FFFFFF; /* White for highlights */
+}
+
+/* Header Section */
+#header {
+  background-color: #000;
+  color: var(--neonpink);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--neonpink);
+}
+
+#header h1 {
+  font-size: 2.5em;
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #1e1e1e;  /* Dark background */
-  color: #f8f8f2;  /* Light text for readability */
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px var(--neonpink), 0 0 20px var(--neonpink);
 }
 
-a {
-  color: #ff79c6;  /* Neon pink for links */
-  text-decoration: none;
+/* Section Styling */
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #222;
+  border: 1px solid var(--sharpgreen);
+  border-radius: 8px;
+  color: var(--brightblue);
+  box-shadow: 0 0 10px var(--sharpgreen);
 }
 
-a:hover {
-  text-decoration: underline;
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+  color: var(--neonpink);
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px var(--neonpink);
 }
 
-/* Header styling */
-h1, h2 {
-  color: #ff79c6;  /* Neon pink headers */
+section p {
+  margin-bottom: 1rem;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Text Sizes */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* Table Styling */
+#resources {
   margin-top: 20px;
-  font-size: 1.5rem;
 }
 
-/* Section styling */
-section {
-  margin: 20px;
-}
-
-#intro, #interests, #projects, #resources, #transAndAutism {
-  border-left: 4px solid #ff79c6;  /* Neon pink border */
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-/* Table styling */
-table {
+#lgbtResources {
   width: 100%;
-  margin-top: 20px;
   border-collapse: collapse;
+  margin-top: 1rem;
 }
 
-th, td {
-  padding: 12px 15px;
-  border: 1px solid #444;
+#lgbtResources thead {
+  background-color: var(--sharpgreen);
+  color: #fff;
+}
+
+#lgbtResources th, #lgbtResources td {
+  padding: 10px;
   text-align: left;
+  border: 1px solid #ddd;
 }
 
-th {
-  background-color: #333;
-  color: #ff79c6;  /* Neon pink header for tables */
+#lgbtResources tr:nth-child(even) {
+  background-color: #444;
 }
 
-td {
-  background-color: #222;
-  color: #f8f8f2;  /* Light text for table cells */
+#lgbtResources a {
+  color: var(--neonpink);
+  text-decoration: none;
 }
 
-/* Footer styling */
+#lgbtResources a:hover {
+  text-decoration: underline;
+  color: var(--sharpgreen);
+}
+
+/* Footer Styling */
 footer {
+  margin-top: 2rem;
   text-align: center;
-  margin-top: 30px;
+  background-color: #222;
+  padding: 1rem 0;
+  border-radius: 8px;
+  color: var(--neonpink);
+  box-shadow: 0 0 5px var(--neonpink);
 }
 
 footer a {
-  color: #ff79c6;
+  color: var(--brightblue);
+  text-decoration: none;
   margin: 0 10px;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Layout and Responsive Design */
+body, section {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  section {
+      padding: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      padding: 20px 40px;
+  }
 }
