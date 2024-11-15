@@ -1,138 +1,156 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Basic Styling */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Header Section */
-  #header {
-    background-color: #3b3b98;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  #header h1 {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  
-  /* Section Styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Neon Green Variable */
+:root {
+  --neongreen: #39FF14;
+  --pastelpink: #F7A1D1;
+  --sharpgreen: #00FF00;
+  --darkblack: #1a1a1a;
+}
+
+/* Header Section */
+#header {
+  background-color: #000;
+  color: var(--neongreen);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--neongreen);
+}
+
+#header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px var(--neongreen), 0 0 20px var(--neongreen);
+}
+
+/* Section Styling */
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #222;
+  border: 1px solid var(--sharpgreen);
+  border-radius: 8px;
+  color: var(--pastelpink);
+  box-shadow: 0 0 10px var(--sharpgreen);
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+  color: var(--neongreen);
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px var(--neongreen);
+}
+
+section p {
+  margin-bottom: 1rem;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Text Sizes */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* Table Styling */
+#resources {
+  margin-top: 20px;
+}
+
+#lgbtResources {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#lgbtResources thead {
+  background-color: var(--sharpgreen);
+  color: #fff;
+}
+
+#lgbtResources th, #lgbtResources td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#lgbtResources tr:nth-child(even) {
+  background-color: #444;
+}
+
+#lgbtResources a {
+  color: var(--neongreen);
+  text-decoration: none;
+}
+
+#lgbtResources a:hover {
+  text-decoration: underline;
+  color: var(--sharpgreen);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #222;
+  padding: 1rem 0;
+  border-radius: 8px;
+  color: var(--neongreen);
+  box-shadow: 0 0 5px var(--neongreen);
+}
+
+footer a {
+  color: var(--pastelpink);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout and Responsive Design */
+body, section {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
   section {
-    margin: 2rem 0;
-    padding: 2rem;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  section h2 {
-    font-size: 1.8em;
-    margin-bottom: 1rem;
-    color: #3b3b98;
-  }
-  
-  section p {
-    margin-bottom: 1rem;
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  /* Responsive Text Sizes */
-  h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-  }
-  
-  h2 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-  }
-  
-  p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-  }
-  
-  /* Table Styling */
-  #resources {
-    margin-top: 20px;
-  }
-  
-  #lgbtResources {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-  }
-  
-  #lgbtResources thead {
-    background-color: #3b3b98;
-    color: #fff;
-  }
-  
-  #lgbtResources th, #lgbtResources td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  #lgbtResources tr:nth-child(even) {
-    background-color: #f1f1f1;
-  }
-  
-  #lgbtResources a {
-    color: #3b3b98;
-    text-decoration: none;
-  }
-  
-  #lgbtResources a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer Styling */
-  footer {
-    margin-top: 2rem;
-    text-align: center;
-    background-color: #333;
-    padding: 1rem 0;
-    border-radius: 8px;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Layout and Responsive Design */
-  body, section {
-    max-width: 100%;
-  }
-  
-  @media (min-width: 768px) {
-    section {
       padding: 2rem 4rem;
-    }
   }
-  
-  @media (min-width: 1024px) {
-    body {
+}
+
+@media (min-width: 1024px) {
+  body {
       padding: 20px 40px;
-    }
   }
-  
+}
