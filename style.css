@@ -9,148 +9,105 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #fff;
-  background-color: #000;
+  color: #333;
+  background-color: #f9f9f9;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Neon Green Variable */
-:root {
-  --neongreen: #39FF14;
-  --pastelpink: #F7A1D1;
-  --sharpgreen: #00FF00;
-  --darkblack: #1a1a1a;
-}
-
 /* Header Section */
-#header {
-  background-color: #000;
-  color: var(--neongreen);
-  padding: 3rem;
+#intro {
+  background-color: #f0f0f0;
+  padding: 2rem;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0 0 15px var(--neongreen);
+  margin-bottom: 2rem;
 }
 
-#header h1 {
+#intro h1 {
   font-size: 2.5em;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 5px;
-  text-shadow: 0 0 10px var(--neongreen), 0 0 20px var(--neongreen);
-}
-
-/* Section Styling */
-section {
-  margin: 2rem 0;
-  padding: 2rem;
-  background-color: #222;
-  border: 1px solid var(--sharpgreen);
-  border-radius: 8px;
-  color: var(--pastelpink);
-  box-shadow: 0 0 10px var(--sharpgreen);
-}
-
-section h2 {
-  font-size: 1.8em;
   margin-bottom: 1rem;
-  color: var(--neongreen);
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: 0 0 5px var(--neongreen);
 }
 
-section p {
+#intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Interests Section */
+#interests {
+  margin-bottom: 2rem;
+}
+
+#interests h2 {
+  font-size: 2rem;
+  color: #3b3b98;
   margin-bottom: 1rem;
-  color: #ddd;
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
-/* Responsive Text Sizes */
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+#interests p {
+  font-size: 1.1rem;
+  color: #333;
 }
 
-h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+/* Projects Section */
+#projects {
+  margin-bottom: 2rem;
 }
 
-p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+#projects h2 {
+  font-size: 2rem;
+  color: #3b3b98;
+  margin-bottom: 1rem;
 }
 
 /* Table Styling */
-#resources {
-  margin-top: 20px;
-}
-
-#lgbtResources {
+#projects-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
 
-#lgbtResources thead {
-  background-color: var(--sharpgreen);
-  color: #fff;
-}
-
-#lgbtResources th, #lgbtResources td {
+#projects-table th,
+#projects-table td {
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
 }
 
-#lgbtResources tr:nth-child(even) {
-  background-color: #444;
+#projects-table th {
+  background-color: #3b3b98;
+  color: white;
 }
 
-#lgbtResources a {
-  color: var(--neongreen);
+#projects-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#projects-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+#projects-table a {
+  color: #3b3b98;
   text-decoration: none;
 }
 
-#lgbtResources a:hover {
+#projects-table a:hover {
   text-decoration: underline;
-  color: var(--sharpgreen);
 }
 
 /* Footer Styling */
 footer {
   margin-top: 2rem;
   text-align: center;
-  background-color: #222;
+  background-color: #333;
+  color: #fff;
   padding: 1rem 0;
   border-radius: 8px;
-  color: var(--neongreen);
-  box-shadow: 0 0 5px var(--neongreen);
 }
 
-footer a {
-  color: var(--pastelpink);
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Layout and Responsive Design */
-body, section {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  section {
-      padding: 2rem 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-      padding: 20px 40px;
-  }
+footer p {
+  font-size: 1rem;
 }
