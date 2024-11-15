@@ -9,128 +9,93 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #fff;
-  background-color: #000;
+  color: #333;
+  background-color: #f4f4f4;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Color Variables */
-:root {
-  --neonpink: #FF1493; /* Neon Pink */
-  --brightblue: #00BFFF; /* Bright Blue */
-  --sharpgreen: #00FF00;
-  --darkblack: #1a1a1a;
-  --white: #FFFFFF; /* White for highlights */
-}
-
-/* Header Section */
-#header {
-  background-color: #000;
-  color: var(--neonpink);
-  padding: 3rem;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 0 15px var(--neonpink);
-}
-
-#header h1 {
-  font-size: 2.5em;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 5px;
-  text-shadow: 0 0 10px var(--neonpink), 0 0 20px var(--neonpink);
 }
 
 /* Section Styling */
 section {
   margin: 2rem 0;
   padding: 2rem;
-  background-color: #222;
-  border: 1px solid var(--sharpgreen);
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  color: var(--brightblue);
-  box-shadow: 0 0 10px var(--sharpgreen);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
   font-size: 1.8em;
   margin-bottom: 1rem;
-  color: var(--neonpink);
   font-family: 'Courier New', Courier, monospace;
-  text-shadow: 0 0 5px var(--neonpink);
 }
 
-section p {
+/* Paragraph Styling */
+p {
   margin-bottom: 1rem;
-  color: #ddd;
+  color: #555;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* Responsive Text Sizes */
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-}
-
-p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-}
-
 /* Table Styling */
-#resources {
-  margin-top: 20px;
-}
-
-#lgbtResources {
+#projects-table,
+#lgbtResources,
+#transResources,
+#womensHealthResources {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
 
-#lgbtResources thead {
-  background-color: var(--sharpgreen);
-  color: #fff;
-}
-
-#lgbtResources th, #lgbtResources td {
+th, td {
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
 }
 
-#lgbtResources tr:nth-child(even) {
-  background-color: #444;
+th {
+  background-color: #f1f1f1;
+  color: #333;
 }
 
-#lgbtResources a {
-  color: var(--neonpink);
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+a {
+  color: #007BFF;
   text-decoration: none;
 }
 
-#lgbtResources a:hover {
+a:hover {
   text-decoration: underline;
-  color: var(--sharpgreen);
 }
 
 /* Footer Styling */
 footer {
   margin-top: 2rem;
   text-align: center;
-  background-color: #222;
+  background-color: #fff;
   padding: 1rem 0;
   border-radius: 8px;
-  color: var(--neonpink);
-  box-shadow: 0 0 5px var(--neonpink);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-  color: var(--brightblue);
+  color: #007BFF;
   text-decoration: none;
   margin: 0 10px;
 }
